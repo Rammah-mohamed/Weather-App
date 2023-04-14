@@ -1,3 +1,5 @@
 # Weather-App
-I Created This App With Vue And It's Powerd by Open Weather API, It's A Simple App Which You Can Search Any Country And It Will Give You The Weather, The Current Temperature and The Date 
-The Live App Link Is Here: https://rammah-weather.netlify.app
+## I created this app using JavaScript. And It has these features:
+#### 1- The user can get the weather in his current location if the user broswer support geolocation api.
+#### 2- The user can get the weather in any valid city.
+#### 3- The user with get the information (current temprature, discription of the weather, the feel like temprature and the humidity).
