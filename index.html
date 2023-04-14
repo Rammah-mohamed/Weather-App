@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <i class="fa-solid fa-chevron-left fa-beat"></i>
+      <h2>Weather App</h2>
+    </header>
+    <div class="input-part">
+      <p class="info">Please Enter A Valid City Name</p>
+      <input type="text" placeholder="Enter a city..." required>
+      <div class="separator"></div>
+      <button class="btn">Get Device Location</button>
+    </div>
+    <div class="weather-part">
+      <img src="#" alt="weather icon">
+      <div class="temp">
+        <span class="num">_ </span><span> </span>C
+      </div>
+      <div class="disc">_</div>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>_, _</p>
+      </div>
+      <div class="details">
+        <div class="feel">
+          <i class="fa-solid fa-temperature-half"></i>
+          <div>
+            <div class="temp">
+              <span class="num">_ </span><span> </span>C
+            </div>
+            <p>Feel Like</p>
+          </div>
+        </div>
+        <div class="humidity">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          <div class="percentage">
+            <span class="num">_%</span>
+            <span>Humidity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

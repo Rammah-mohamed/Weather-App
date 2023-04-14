@@ -1,0 +1,207 @@
+/* import open sans font from font awesome */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #009FBD;
+}
+
+.wrapper {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  color: #009FBD;
+}
+
+.wrapper header i {
+  margin-right: 10px;
+  font-size: 0px;
+  cursor: pointer;
+}
+
+.wrapper.active header i {
+  font-size: 18px;
+}
+
+.wrapper .input-part .info {
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.wrapper .input-part .info.error {
+  background-color: #F8D7DA;
+  color: #721C24;
+  border: 1px solid #F5C6CB;
+}
+
+.wrapper .input-part .info.pending {
+  background-color: #D1ECF1;
+  color: #0C5460;
+  border: 1px solid #BEE5EB;
+}
+
+.wrapper.active .input-part {
+  display: none;
+}
+
+.wrapper .input-part :where(input, .btn) {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .input-part input {
+  border: 1px solid #ddd;
+  caret-color: #009FBD;
+}
+
+.wrapper .input-part input:is(:focus, :active) {
+  border-color: #009fbd;
+}
+
+.wrapper .input-part .separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  color: #ccc;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.wrapper .input-part .separator::before {
+  content: "or";
+  background-color: #FFF;
+  padding: 0 10px;
+}
+
+.wrapper .input-part button {
+  background-color: #009FBD;
+  color: #FFF;
+}
+
+.wrapper .weather-part {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper.active .weather-part {
+  display: flex;
+}
+
+.wrapper .weather-part > img {
+  max-width: 150px;
+  margin: 20px 0;
+}
+
+.wrapper .weather-part .temp {
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 20px;
+  color: #009FBD;
+}
+
+.wrapper .weather-part .temp span:last-child {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #009FBD;
+  border-radius: 50%;
+  position: absolute;
+  left: 58%;
+  top: 5px;
+}
+
+.wrapper .weather-part .disc {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.wrapper .weather-part .location {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.wrapper .weather-part i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #009FBD;
+}
+
+.wrapper .weather-part .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.wrapper .weather-part .details > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.wrapper .weather-part .details .feel {
+  border-right: 1px solid #DDD;
+}
+
+.weather-part .details .temp {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.weather-part .details .temp > span:last-child {
+  width: 5px;
+  height: 5px;
+  left: 18px;
+  top: 0;
+}
+
+.weather-part .details .percentage span, .weather-part .details p{
+  display: block;
+  font-weight: 500;
+}
+
+.weather-part .details .percentage span:first-child {
+  color: #009FBD;
+}
